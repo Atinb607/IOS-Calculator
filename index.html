@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn btn-light" onclick="clearDisplay()">AC</button>
+            <button class="btn btn-light" onclick="plusMinus()">+/-</button>
+            <button class="btn btn-light" onclick="percentage()">%</button>
+            <button class="btn btn-orange" onclick="appendOperator('/')">&#247;</button>
+
+            <button class="btn btn-dark" onclick="appendNumber('7')">7</button>
+            <button class="btn btn-dark" onclick="appendNumber('8')">8</button>
+            <button class="btn btn-dark" onclick="appendNumber('9')">9</button>
+            <button class="btn btn-orange" onclick="appendOperator('*')">&times;</button>
+
+            <button class="btn btn-dark" onclick="appendNumber('4')">4</button>
+            <button class="btn btn-dark" onclick="appendNumber('5')">5</button>
+            <button class="btn btn-dark" onclick="appendNumber('6')">6</button>
+            <button class="btn btn-orange" onclick="appendOperator('-')">&minus;</button>
+
+            <button class="btn btn-dark" onclick="appendNumber('1')">1</button>
+            <button class="btn btn-dark" onclick="appendNumber('2')">2</button>
+            <button class="btn btn-dark" onclick="appendNumber('3')">3</button>
+            <button class="btn btn-orange" onclick="appendOperator('+')">+</button>
+
+            <button class="btn btn-dark zero" onclick="appendNumber('0')">0</button>
+            <button class="btn btn-dark" onclick="appendNumber('.')">.</button>
+            <button class="btn btn-orange" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
